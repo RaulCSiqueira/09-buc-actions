@@ -69,9 +69,7 @@ jobs:
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }} #access key password for aws s
         with:
           bucket: teste-teste-12345 # name of the s3 bucket
-          dist-folder: |
-            ./dist
-            ./images
+          dist-folder: ./dist
           # ducket-region: us-east-21
       - name: Output information
         run: |
