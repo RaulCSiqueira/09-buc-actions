@@ -59,7 +59,9 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: dist-files
-          path: ./dist
+          path: |
+            ./dist
+            ./teste
       - name: Output contents
         run: ls
       - name: Deploy site
@@ -71,7 +73,7 @@ jobs:
           bucket: teste-teste-12345 # name of the s3 bucket
           dist-folder: |
             ./dist
-            ./teste
+            ./teste          
           # ducket-region: us-east-21
       - name: Output information
         run: |
