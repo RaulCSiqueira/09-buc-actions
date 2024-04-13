@@ -70,7 +70,7 @@ jobs:
         with:
           bucket: teste-teste-12345 # name of the s3 bucket
           dist-folder: ./test
-          # ducket-region: us-east-2
+          # ducket-region: us-east-21
       - name: Output information
         run: |
           echo "Live URL: ${{ steps.deploy.outputs.website-url }}"
